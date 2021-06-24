@@ -58,7 +58,7 @@ class IssueController extends AbstractController
         $json = json_decode($request->getContent(), true);
 
         if (empty($json)) {
-            return new JsonResponse(['status' => false, 'errors' => 'Can\'t store a client. JSON error!'],
+            return new JsonResponse(['status' => false, 'errors' => 'Can\'t store a issue. JSON error!'],
                 Response::HTTP_BAD_REQUEST);
         }
 
